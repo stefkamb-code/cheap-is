@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>cheap-is — Δύο προτάσεις σχεδίασης</title>
+<meta name="description" content="Δύο προτάσεις σχεδίασης για την ιστοσελίδα cheap-is. Δείτε και τις δύο και επιλέξτε.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="cheap-is">
+<meta property="og:locale" content="el_GR">
+<meta property="og:title" content="cheap-is — Δύο προτάσεις σχεδίασης">
+<meta property="og:description" content="Δείτε και τις δύο προτάσεις για την ιστοσελίδα και πείτε μας ποια σας εκφράζει.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="theme-color" content="#08152F">
+<link rel="icon" href="assets/favicon-64.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="stylesheet" href="fonts.css">
+<style>
+  :root{
+    --navy-900:#08152F; --navy-800:#0C1E42; --navy-700:#16305F;
+    --ink:#14213D; --body:#4A5568; --muted:#8FA0BC;
+    --gold:#F0A81C; --gold-2:#FFC24A; --line:#E4E9F2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:'Manrope',-apple-system,'Segoe UI',sans-serif;
+    background:var(--navy-900);color:rgba(255,255,255,.72);
+    line-height:1.65;min-height:100vh;display:flex;flex-direction:column;
+    -webkit-font-smoothing:antialiased;position:relative;overflow-x:hidden;
+  }
+  body:before{
+    content:"";position:fixed;inset:0;z-index:0;
+    background:
+      radial-gradient(900px 500px at 80% 0%, rgba(240,168,28,.18), transparent 60%),
+      radial-gradient(700px 500px at 5% 100%, rgba(30,107,230,.24), transparent 62%),
+      linear-gradient(160deg,#08152F 0%,#0C1E42 55%,#16305F 100%);
+  }
+  .wrap{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:56px 24px 40px;flex:1}
+  header{text-align:center;margin-bottom:52px}
+  .brand{display:inline-flex;align-items:center;gap:12px;margin-bottom:28px}
+  .brand img{width:52px;height:52px;object-fit:contain}
+  .brand span{font-size:1.7rem;font-weight:800;color:#fff;letter-spacing:-.035em}
+  .brand i{color:var(--gold);font-style:normal}
+  h1{
+    font-size:clamp(1.7rem,4vw,2.6rem);color:#fff;font-weight:800;
+    letter-spacing:-.025em;line-height:1.2;margin-bottom:14px;
+  }
+  h1 em{font-style:normal;color:var(--gold-2)}
+  .sub{font-size:1.02rem;max-width:56ch;margin:0 auto;color:rgba(255,255,255,.7)}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .card{
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;padding:34px 30px 30px;display:flex;flex-direction:column;
+    transition:.3s;text-align:left;
+  }
+  .card:hover{background:rgba(255,255,255,.09);border-color:rgba(240,168,28,.5);transform:translateY(-4px)}
+  .tag{
+    display:inline-block;align-self:flex-start;font-size:.72rem;font-weight:800;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--gold);
+    border:1px solid rgba(240,168,28,.45);border-radius:4px;padding:5px 12px;margin-bottom:20px;
+  }
+  .card h2{font-size:1.5rem;color:#fff;font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+  .card > p{font-size:.95rem;margin-bottom:22px}
+  ul{list-style:none;display:grid;gap:10px;margin-bottom:28px}
+  li{position:relative;padding-left:26px;font-size:.9rem;color:rgba(255,255,255,.72)}
+  li:before{
+    content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;
+    background:rgba(240,168,28,.18);
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FFC24A'><path d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/></svg>");
+    background-size:11px;background-repeat:no-repeat;background-position:center;
+  }
+  .btn{
+    margin-top:auto;display:flex;align-items:center;justify-content:center;gap:9px;
+    background:linear-gradient(180deg,var(--gold-2),var(--gold));color:#3A2600;
+    font-weight:800;font-size:.98rem;padding:16px 24px;border-radius:99px;
+    text-decoration:none;transition:.25s;box-shadow:0 6px 18px rgba(240,168,28,.3);
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(240,168,28,.45)}
+  .note{
+    margin-top:44px;background:rgba(255,255,255,.05);border-left:3px solid var(--gold);
+    border-radius:0 12px 12px 0;padding:20px 24px;font-size:.9rem;
+  }
+  .note b{color:#fff}
+  footer{
+    position:relative;z-index:1;text-align:center;padding:26px 24px 34px;
+    font-size:.82rem;color:rgba(255,255,255,.4);
+  }
+  @media (max-width:760px){
+    .cards{grid-template-columns:1fr}
+    .wrap{padding:40px 20px 30px}
+    header{margin-bottom:36px}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <img src="assets/mark.png" alt="">
+      <span>cheap<i>-</i>is</span>
+    </div>
+    <h1>Δύο προτάσεις για το site.<br><em>Διαλέξτε αυτή που σας εκφράζει.</em></h1>
+    <p class="sub">
+      Ίδιο περιεχόμενο, ίδιες λειτουργίες — διαφορετική εμφάνιση.
+      Ανοίξτε και τις δύο, δείτε τις και από κινητό, και πείτε μας ποια προτιμάτε.
+    </p>
+  </header>
+
+  <div class="cards">
+    <article class="card">
+      <span class="tag">Πρόταση Α</span>
+      <h2>Λιτή &amp; μοντέρνα</h2>
+      <p>Καθαρές γραμμές, έμφαση στο μήνυμα και στη φόρμα. Φορτώνει πολύ γρήγορα.</p>
+      <ul>
+        <li>Φόρμα αμέσως στην πρώτη οθόνη</li>
+        <li>Χωρίς φωτογραφίες — μόνο τυπογραφία</li>
+        <li>Προγράμματα με περιγραφές, χωρίς τιμές</li>
+        <li>Πιο ουδέτερο, δύσκολα παλιώνει</li>
+      </ul>
+      <a class="btn" href="a/">Δείτε την πρόταση Α →</a>
+    </article>
+
+    <article class="card">
+      <span class="tag">Πρόταση Β</span>
+      <h2>Εταιρική &amp; πλούσια</h2>
+      <p>Φωτογραφίες, πακέτα με τιμές και άρθρα. Δείχνει μεγαλύτερη εταιρεία.</p>
+      <ul>
+        <li>Φωτογραφίες σε hero, άρθρα και φόρμα</li>
+        <li>Πακέτα σε τρεις στήλες με «Προτεινόμενο»</li>
+        <li>Ενότητα άρθρων και μπάρα στατιστικών</li>
+        <li>Ξεχωριστή πρόσκληση για συνεργάτες</li>
+      </ul>
+      <a class="btn" href="b/">Δείτε την πρόταση Β →</a>
+    </article>
+  </div>
+
+  <div class="note">
+    <b>Σημείωση:</b> και οι δύο είναι προσχέδια. Τα τηλέφωνα, τα email και οι τιμές
+    στα πακέτα είναι ενδεικτικά και αντικαθίστανται με τα πραγματικά. Οι φόρμες
+    λειτουργούν, αλλά δεν έχουν συνδεθεί ακόμη — δεν στέλνουν κάπου. Χρώματα,
+    κείμενα και σειρά ενοτήτων αλλάζουν όπως θέλετε.
+  </div>
+</div>
+
+<footer>cheap-is · Προεπισκόπηση σχεδίασης</footer>
+
+</body>
+</html>
