@@ -365,16 +365,24 @@ input.is-error,select.is-error{border-color:var(--err);background:#FCF3F2}
 .faq details > div p{font-size:.9rem}
 
 /* ===== ΤΕΛΙΚΟ CTA ===== */
-.finalcta{padding:92px 0;background:var(--dark);position:relative;overflow:hidden}
-.finalcta:before{content:"";position:absolute;inset:0;background:radial-gradient(520px 300px at 88% 110%,rgba(199,162,104,.16),transparent 64%)}
+.finalcta{
+  padding:88px 0;background:var(--bg-3);position:relative;overflow:hidden;
+  border-top:1px solid var(--line-2);border-bottom:1px solid var(--line-2);
+}
+.finalcta:before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(560px 300px at 85% 110%,rgba(176,131,65,.12),transparent 64%);
+}
 .finalcta__in{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:44px;flex-wrap:wrap}
-.finalcta h2{margin-bottom:12px;color:#FBFAF7}
-.finalcta p{font-size:.94rem;color:rgba(251,250,247,.62)}
+.finalcta__in > div:first-child{position:relative;padding-top:26px}
+.finalcta__in > div:first-child:before{content:"";position:absolute;left:0;top:0;width:46px;height:2px;background:var(--acc)}
+.finalcta h2{margin-bottom:12px;color:var(--ink)}
+.finalcta p{font-size:.94rem;color:var(--txt)}
 .finalcta__btns{display:flex;gap:12px;flex-wrap:wrap}
-.finalcta .btn--gold{background:#FBFAF7;color:var(--ink)}
-.finalcta .btn--gold:hover{background:#fff}
-.finalcta .btn--ghost{border-color:rgba(251,250,247,.3);color:#FBFAF7}
-.finalcta .btn--ghost:hover{border-color:#FBFAF7}
+.finalcta .btn--gold{background:var(--ink);color:#FBFAF7}
+.finalcta .btn--gold:hover{background:#332F28}
+.finalcta .btn--ghost{border-color:var(--line-2);color:var(--ink);background:rgba(255,255,255,.5)}
+.finalcta .btn--ghost:hover{border-color:var(--ink);background:#fff}
 
 /* ===== FOOTER ===== */
 .footer{background:var(--bg);border-top:1px solid var(--line);padding:66px 0 0}
